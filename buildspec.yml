@@ -4,7 +4,6 @@ phases:
     commands:
       - npm install serverless -g
       - npm install serverless-sam --save-dev
-      - npm install serverless-domain-manager --save-dev
       - serverless sam export --output ./samTemplate.yaml
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket homex-lambda-pipeline --output-template-file outputSamTemplate.yaml
 artifacts:
