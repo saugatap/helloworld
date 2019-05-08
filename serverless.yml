@@ -2,7 +2,7 @@ service: helloworld
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs8.11
   stage: dev
   region: ap-southeast-1
   
